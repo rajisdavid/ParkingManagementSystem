@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <a href="dashboard.html" class="menu-button">Dashboard</a>
+            <a href="booking.html" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" class="menu-button">Real-Time Track</a>
+            <a href="report.html" class="menu-button active">Generate Report</a>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="container">
+            <h2>Generate Report</h2>
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="report-type">Report Type</label>
+                    <select id="report-type">
+                        <option value="summary">Summary Overview</option>
+                        <option value="financial">Financial Information</option>
+                        <option value="user-stats">User Statistics</option>
+                        <option value="operational">Operational Metrics</option>
+                        <option value="spot-usage">Parking Spot Usage</option>
+                        <option value="traffic-flow">Traffic Flow</option>
+                        <option value="customer-feedback">Customer Feedback</option>
+                        <option value="environmental">Environmental Impact</option>
+                        <option value="security">Security Reports</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date-range">Date Range</label>
+                    <input type="date" id="start-date" placeholder="Start Date">
+                    <input type="date" id="end-date" placeholder="End Date">
+                </div>
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Smart Parking Management System. All rights reserved.</p>
+    </footer>
+    <script src="report.js"></script>
+</body>
+</html>

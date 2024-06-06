@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System - Real-Time Tracking</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <a href="dashboard.html" id="dashboard-link" class="menu-button">Dashboard</a>
+            <a href="booking.html" id="booking-link" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" id="realtime-link" class="menu-button active">Real-Time Track</a>
+            <a href="report.html" id="report-link" class="menu-button">Generate Report</a>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="container">
+            <h2>Real-Time Parking Availability</h2>
+            <div id="map" class="map"></div>
+            <div class="info-panel">
+                <div id="parking-info" class="info-section">
+                    <h3>Parking Information</h3>
+                    <div id="parking-availability"></div>
+                </div>
+                <div id="notifications" class="info-section">
+                    <h3>Notifications</h3>
+                    <ul id="notification-list"></ul>
+                </div>
+            </div>
+            <div class="info-panel">
+                <div id="vehicle-tracking" class="info-section">
+                    <h3>Vehicle Tracking</h3>
+                    <div id="vehicle-location"></div>
+                </div>
+                <div id="payment-integration" class="info-section">
+                    <h3>Payment Integration</h3>
+                    <form id="payment-form">
+                        <input type="text" placeholder="Card Number">
+                        <input type="text" placeholder="Expiry Date">
+                        <input type="text" placeholder="CVV">
+                        <button type="submit">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="info-panel">
+                <div id="user-profile" class="info-section">
+                    <h3>User Profile</h3>
+                    <div id="user-details"></div>
+                </div>
+                <div id="feedback" class="info-section">
+                    <h3>Feedback</h3>
+                    <form id="feedback-form">
+                        <textarea placeholder="Your feedback"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Smart Parking Management System. All rights reserved.</p>
+    </footer>
+    <script src="real.css"></script>
+</body>
+</html>

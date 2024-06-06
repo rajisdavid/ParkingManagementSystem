@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo-color-removebg-preview.png" alt="Logo" class="logo">
+        <h1>You can park here!</h1>
+        <div class="user-menu">
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+    <section>
+        <nav class="menu-bar">
+            <a href="dashboard.html" id="dashboard-link" class="menu-button">Dashboard</a>
+            <a href="booking.html" id="booking-link" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" id="realtime-link" class="menu-button">Real-Time Track</a>
+            <a href="#report" id="report-link" class="menu-button">Generate Report</a>
+            <a href="#aboutUs" class="menu-button"> About us</a>
+        </nav>
+        <div class="container">
+            <main id="content">
+                <h2>Welcome to Smart Parking Management! <span id="usernameDisplay"></span></h2>
+                <p>Effortlessly manage your parking with our real-time, sensor-driven solution. Our system provides 
+                    up-to-the-minute information about available parking spaces, helping you save time and reduce stress.
+                </p>
+                <div class="user-stats">
+                    <div class="user-count">
+                        <h3>Around 130,650+</h3>
+                        <p>Users have been using our service</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="gallery">
+            <p>What we provide for you: </p>
+            <div class="gallery-item">
+                <img src="download.png" alt="feature one">
+                <div class="description">A serene beach at sunset with gentle waves lapping against the shore, palm trees swaying in the breeze, and a vibrant sky filled with hues of orange, pink, and purple.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="download.png" alt="feature two">
+                <div class="description">A majestic mountain landscape with snow-capped peaks under a clear blue sky. Pine trees cover the lower slopes, leading to a crystal-clear lake reflecting the mountains.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="download.png" alt="feature three">
+                <div class="description">A bustling cityscape with a skyline at dusk, where skyscrapers are illuminated with lights. The streets below are busy with traffic, and the sky is a gradient of deep blue to purple.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="download.png" alt="feature four">
+                <div class="description">A tranquil forest path with sunbeams filtering through the dense canopy of trees. The ground is covered with fallen leaves, and the atmosphere is serene and peaceful.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="download.png" alt="feature five">
+                <div class="description">A vibrant coral reef underwater scene filled with colorful corals, various fish, and clear blue water. The sunlight penetrates the surface, creating a beautiful play of light underwater.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="report">
+        <div class="reporter">
+            <h2>Generate Report</h2>
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="report-type">Report Type</label>
+                    <select id="report-type">
+                        <option value="summary">Summary Overview</option>
+                        <option value="financial">Financial Information</option>
+                        <option value="user-stats">User Statistics</option>
+                        <option value="operational">Operational Metrics</option>
+                        <option value="spot-usage">Parking Spot Usage</option>
+                        <option value="traffic-flow">Traffic Flow</option>
+                        <option value="customer-feedback">Customer Feedback</option>
+                        <option value="environmental">Environmental Impact</option>
+                        <option value="security">Security Reports</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date-range">Date Range</label>
+                    <input type="date" id="start-date" placeholder="Start Date">
+                    <input type="date" id="end-date" placeholder="End Date">
+                </div>
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"The best parking management system I've ever used! It makes finding and reserving parking spots so easy." - John Doe</blockquote>
+        <blockquote>"Super convenient and easy to use. The real-time tracking feature is a game-changer!" - Jane Smith</blockquote>
+        <blockquote>"Excellent customer service and a very reliable system. Highly recommended!" - Michael Johnson</blockquote>
+    </section>
+    <section id="aboutUs">
+        <h2>About Us</h2>
+        <p>Welcome to the Parking Management System, your reliable partner for efficient parking solutions. Our mission is to simplify the parking experience for everyone by providing innovative and user-friendly services. We are dedicated to enhancing convenience, safety, and satisfaction for all our users.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+        <p>Email: <a href="mailto:support@parkingmanagement.com">support@parkingmanagement.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Parking St, City, Country</p>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                <p>Email: <a href="mailto:support@parkingmanagement.com">support@parkingmanagement.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Parking St, City, Country</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parking Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
